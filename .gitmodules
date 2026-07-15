@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/zabyz1337/ichgram-frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/zabyz1337/ichgram-backend.git
