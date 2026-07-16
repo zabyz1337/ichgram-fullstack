@@ -1,12 +1,95 @@
-## Clone
+# ICHgram Fullstack
+
+Fullstack social network built with React, Express, MongoDB and Docker.
+
+---
+
+## Technologies
+
+- React
+- Vite
+- Express.js
+- MongoDB
+- Docker
+- Docker Compose
+
+---
+
+## Requirements
+
+Before starting, install:
+
+- Git
+- Docker Desktop
+
+Check Docker installation:
+
+```bash
+docker --version
+docker compose version
+```
+
+---
+
+## Clone project
 
 ```bash
 git clone --recurse-submodules https://github.com/zabyz1337/ichgram-fullstack.git
 cd ichgram-fullstack
 ```
 
-If the repository was cloned without submodules, run:
+If submodules were not downloaded:
 
 ```bash
 git submodule update --init --recursive
+```
+
+---
+
+## Start application
+
+Build containers:
+
+```bash
+docker compose up --build
+```
+
+or run in background:
+
+```bash
+docker compose up -d --build
+```
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
+Rebuild after changes:
+
+```bash
+docker compose up --build
+```
+
+---
+
+## Application
+
+Frontend
+
+```
+http://localhost:5173
+```
+
+Backend API
+
+```
+http://localhost:5000
+```
+
+MongoDB
+
+```
+mongodb://localhost:27017
 ```
