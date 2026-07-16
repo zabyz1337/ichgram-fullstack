@@ -93,3 +93,28 @@ MongoDB
 ```
 mongodb://localhost:27017
 ```
+
+---
+
+## Demo data
+
+After the containers are running, populate a new database with demo users,
+posts, comments, likes, notifications and messages:
+
+```bash
+docker compose exec backend npm run seed
+```
+
+The command is safe to run again: if the demo account already exists, no data
+is changed and no duplicates are created.
+
+Demo login:
+
+```
+Email: demo@ichgram.test
+Password: Demo123!
+```
+
+The demo account is displayed as **Daniel Weber** (`daniel.weber`). The seed
+also creates the `itcareerhub` profile, its six JPEG posts, conversations,
+likes and comments.
